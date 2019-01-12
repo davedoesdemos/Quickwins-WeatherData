@@ -1,5 +1,5 @@
 # Quick Win - Setting up a Weather Service
-** Produced by Dave Lusty **
+**Produced by Dave Lusty**
 
 Head to [openweathermap](https://openweathermap.org) and sign up for API access. This will give you an API key to use when requesting data. The service is free up to certain traffic limits which we won’t hit if using it for daily updates.
 
