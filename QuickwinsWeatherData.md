@@ -1,5 +1,6 @@
 # Quick Win - Setting up a Weather Service
-Produced by Dave Lusty
+**Produced by Dave Lusty**
+
 Head to [openweathermap](https://openweathermap.org) and sign up for API access. This will give you an API key to use when requesting data. The service is free up to certain traffic limits which we won’t hit if using it for daily updates.
 
 ![1.OpenWeatherMap](images/1.OpenWeatherMap.png)
@@ -8,7 +9,7 @@ You’ll need the key from this box later. I’ve covered mine in blue here as y
 * Create a Resource Group in your Azure subscription called “Weather Data”
 * This will encapsulate all components used to gather weather data
   * When you no longer need weather data, delete this resource group and everything will be tidy
-  - In this RG, create a storage account. The name of this doesn’t matter, but “weatherdata<yourlastname>” should work and will be easy to spot
+  * In this RG, create a storage account. The name of this doesn’t matter, but “weatherdata<yourlastname>” should work and will be easy to spot
 *	Create a Logic App in the same resource group and region called “ActualWeather”
 *	In the designer, we’ll be making the following structure. A timer will kick off the run every day, then call the API and write to blob if it succeeds. If not you can send a mail or tweet to yourself.
 
